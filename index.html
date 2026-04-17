@@ -1,0 +1,2249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohan Lal Siyot Grocery Store — Fresh groceries at affordable prices. Atta chakki service at only ₹4/kg. Your trusted local grocery store for everyday essentials.">
+    <meta name="keywords" content="grocery store near me, atta chakki near me, affordable grocery shop, Mohan Lal Siyot, local grocery store, fresh groceries, bulk grocery, household items">
+    <meta name="author" content="Mohan Lal Siyot Grocery Store">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mohan Lal Siyot Grocery Store — Fresh Groceries at Affordable Prices">
+    <meta property="og:description" content="Your trusted local grocery store for fresh items, affordable prices, and everyday essentials. Atta chakki at ₹4/kg.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_IN">
+    <title>Mohan Lal Siyot Grocery Store — Fresh Groceries at Affordable Prices</title>
+
+    <!-- Structured Data: LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "GroceryStore",
+        "name": "Mohan Lal Siyot Grocery Store",
+        "description": "Fresh Groceries at Affordable Prices. Atta Chakki service at ₹4/kg.",
+        "url": "",
+        "telephone": "",
+        "openingHours": "Mo-Su 08:00-22:00",
+        "priceRange": "₹",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Grocery Products",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Atta" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Rice" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cooking Oil" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Biscuits" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Cold Drinks" } }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ============================================
+           DESIGN SYSTEM — Agent 1: UI/UX Foundation
+           ============================================ */
+
+        :root {
+            /* Color Palette — Soft, fresh, premium */
+            --color-primary: #2DB052;
+            --color-primary-light: #3FCF65;
+            --color-primary-dark: #1E8A3C;
+            --color-primary-subtle: #E8F8ED;
+            --color-primary-glow: rgba(45, 176, 82, 0.15);
+
+            --color-accent: #FF6B35;
+            --color-accent-light: #FF8A5C;
+            --color-accent-subtle: #FFF3ED;
+
+            --color-bg: #FAFCFB;
+            --color-bg-alt: #F2F7F4;
+            --color-bg-card: #FFFFFF;
+            --color-bg-elevated: #FFFFFF;
+
+            --color-text: #1A2E22;
+            --color-text-secondary: #5A6B61;
+            --color-text-muted: #8A9B91;
+            --color-text-inverse: #FFFFFF;
+
+            --color-border: #E2EAE5;
+            --color-border-light: #EDF3EF;
+
+            --color-success: #00C853;
+            --color-badge: #FFC107;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 3px rgba(26, 46, 34, 0.04), 0 1px 2px rgba(26, 46, 34, 0.03);
+            --shadow-md: 0 4px 12px rgba(26, 46, 34, 0.06), 0 2px 6px rgba(26, 46, 34, 0.04);
+            --shadow-lg: 0 12px 32px rgba(26, 46, 34, 0.08), 0 4px 12px rgba(26, 46, 34, 0.04);
+            --shadow-xl: 0 20px 48px rgba(26, 46, 34, 0.10), 0 8px 20px rgba(26, 46, 34, 0.06);
+            --shadow-glow: 0 0 24px rgba(45, 176, 82, 0.2);
+            --shadow-card-hover: 0 16px 40px rgba(26, 46, 34, 0.12), 0 6px 16px rgba(26, 46, 34, 0.06);
+
+            /* Typography */
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Inter', sans-serif;
+
+            /* Spacing */
+            --space-xs: 4px;
+            --space-sm: 8px;
+            --space-md: 16px;
+            --space-lg: 24px;
+            --space-xl: 32px;
+            --space-2xl: 48px;
+            --space-3xl: 64px;
+            --space-4xl: 96px;
+
+            /* Radius */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+            --radius-full: 9999px;
+
+            /* Transitions */
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --duration-fast: 0.2s;
+            --duration-normal: 0.35s;
+            --duration-slow: 0.5s;
+        }
+
+        /* ============================================
+           RESET & BASE
+           ============================================ */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+            font-family: var(--font-body);
+        }
+
+        /* ============================================
+           UTILITY CLASSES
+           ============================================ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--color-primary);
+            background: var(--color-primary-subtle);
+            padding: 6px 16px;
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-md);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+            margin-bottom: var(--space-md);
+        }
+
+        .section-subtitle {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            max-width: 560px;
+            line-height: 1.7;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+
+        .section-header .section-subtitle {
+            margin: 0 auto;
+        }
+
+        /* ============================================
+           SCROLL ANIMATIONS — Agent 2
+           ============================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity var(--duration-slow) var(--ease-out),
+                        transform var(--duration-slow) var(--ease-out);
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+        .reveal-delay-5 { transition-delay: 0.5s; }
+
+        /* ============================================
+           NAVBAR
+           ============================================ */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--color-border-light);
+            transition: all var(--duration-normal) var(--ease-out);
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow-md);
+        }
+
+        .navbar-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 72px;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: var(--space-md);
+        }
+
+        .brand-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 12px rgba(45, 176, 82, 0.3);
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.2;
+        }
+
+        .brand-tagline {
+            font-size: 0.7rem;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xl);
+            list-style: none;
+        }
+
+        .navbar-links a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            transition: color var(--duration-fast) var(--ease-out);
+            position: relative;
+        }
+
+        .navbar-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-primary);
+            border-radius: 1px;
+            transition: width var(--duration-normal) var(--ease-out);
+        }
+
+        .navbar-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .navbar-links a:hover::after {
+            width: 100%;
+        }
+
+        .navbar-cta {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: white !important;
+            padding: 10px 22px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.85rem;
+            box-shadow: 0 4px 12px rgba(45, 176, 82, 0.3);
+            transition: all var(--duration-normal) var(--ease-out) !important;
+        }
+
+        .navbar-cta::after {
+            display: none !important;
+        }
+
+        .navbar-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(45, 176, 82, 0.4) !important;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            padding: 8px;
+        }
+
+        .mobile-menu-btn span {
+            width: 24px;
+            height: 2.5px;
+            background: var(--color-text);
+            border-radius: 2px;
+            transition: all var(--duration-normal) var(--ease-out);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            padding-top: 140px;
+            padding-bottom: var(--space-4xl);
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(170deg, var(--color-bg) 0%, var(--color-primary-subtle) 50%, var(--color-bg-alt) 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -200px;
+            right: -200px;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(45, 176, 82, 0.08) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-slow 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -100px;
+            left: -150px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 107, 53, 0.06) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-slow 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float-slow {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(20px, -20px) scale(1.05); }
+        }
+
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 560px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            padding: 8px 18px;
+            border-radius: var(--radius-full);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--space-lg);
+            box-shadow: var(--shadow-sm);
+            animation: fadeInDown 0.6s var(--ease-out);
+        }
+
+        .hero-badge .dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-success);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.3); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            font-weight: 800;
+            line-height: 1.15;
+            color: var(--color-text);
+            margin-bottom: var(--space-lg);
+            animation: fadeInUp 0.7s var(--ease-out) 0.1s both;
+        }
+
+        .hero-title .highlight {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-description {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            margin-bottom: var(--space-xl);
+            animation: fadeInUp 0.7s var(--ease-out) 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            animation: fadeInUp 0.7s var(--ease-out) 0.3s both;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            padding: 14px 28px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all var(--duration-normal) var(--ease-out);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: white;
+            box-shadow: 0 4px 16px rgba(45, 176, 82, 0.35);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(45, 176, 82, 0.45);
+        }
+
+        .btn-primary:active {
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: var(--color-bg-card);
+            color: var(--color-text);
+            border: 1.5px solid var(--color-border);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-3px);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+            animation: fadeInUp 0.7s var(--ease-out) 0.4s both;
+        }
+
+        .hero-stat {
+            text-align: center;
+        }
+
+        .hero-stat-value {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        .hero-stat-label {
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            margin-top: 2px;
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            animation: fadeInUp 0.8s var(--ease-out) 0.3s both;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            max-width: 480px;
+            position: relative;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-md);
+        }
+
+        .hero-item {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: all var(--duration-normal) var(--ease-out);
+            animation: scaleIn 0.5s var(--ease-spring) both;
+        }
+
+        .hero-item:nth-child(1) { animation-delay: 0.3s; }
+        .hero-item:nth-child(2) { animation-delay: 0.4s; }
+        .hero-item:nth-child(3) { animation-delay: 0.5s; }
+        .hero-item:nth-child(4) { animation-delay: 0.6s; }
+        .hero-item:nth-child(5) { animation-delay: 0.7s; }
+        .hero-item:nth-child(6) { animation-delay: 0.8s; }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.85); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .hero-item:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--color-primary-subtle);
+        }
+
+        .hero-item-icon {
+            font-size: 2.4rem;
+            margin-bottom: var(--space-sm);
+            display: block;
+        }
+
+        .hero-item-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        /* Floating decorative elements */
+        .floating-badge {
+            position: absolute;
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            padding: 10px 16px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+            animation: float-badge 4s ease-in-out infinite;
+        }
+
+        .floating-badge.top-right {
+            top: -10px;
+            right: -10px;
+            color: var(--color-primary);
+        }
+
+        .floating-badge.bottom-left {
+            bottom: 20px;
+            left: -20px;
+            color: var(--color-accent);
+        }
+
+        @keyframes float-badge {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        /* ============================================
+           CATEGORIES SECTION
+           ============================================ */
+        .categories {
+            padding: var(--space-4xl) 0;
+            background: var(--color-bg);
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+        }
+
+        .category-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl) var(--space-lg);
+            text-align: center;
+            transition: all var(--duration-normal) var(--ease-out);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+            transform: scaleX(0);
+            transition: transform var(--duration-normal) var(--ease-out);
+        }
+
+        .category-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+            border-color: var(--color-primary-subtle);
+        }
+
+        .category-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto var(--space-md);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            transition: transform var(--duration-normal) var(--ease-spring);
+        }
+
+        .category-card:hover .category-icon {
+            transform: scale(1.1) rotate(-3deg);
+        }
+
+        .category-icon.grains { background: linear-gradient(135deg, #FFF8E1, #FFE082); }
+        .category-icon.oil { background: linear-gradient(135deg, #FFF3E0, #FFCC80); }
+        .category-icon.snacks { background: linear-gradient(135deg, #E8F5E9, #A5D6A7); }
+        .category-icon.household { background: linear-gradient(135deg, #E3F2FD, #90CAF9); }
+
+        .category-name {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 4px;
+        }
+
+        .category-count {
+            font-size: 0.8rem;
+            color: var(--color-text-muted);
+        }
+
+        /* ============================================
+           PRODUCTS SECTION
+           ============================================ */
+        .products {
+            padding: var(--space-4xl) 0;
+            background: var(--color-bg-alt);
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .product-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--duration-normal) var(--ease-out);
+            box-shadow: var(--shadow-sm);
+            cursor: pointer;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .product-image {
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image .product-bg {
+            position: absolute;
+            inset: 0;
+            opacity: 0.5;
+        }
+
+        .product-image span {
+            position: relative;
+            z-index: 1;
+            transition: transform var(--duration-normal) var(--ease-spring);
+        }
+
+        .product-card:hover .product-image span {
+            transform: scale(1.15) rotate(-5deg);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: var(--space-md);
+            left: var(--space-md);
+            background: var(--color-primary);
+            color: white;
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        .product-info {
+            padding: var(--space-lg);
+        }
+
+        .product-name {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 6px;
+        }
+
+        .product-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            color: var(--color-primary);
+            background: var(--color-primary-subtle);
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            margin-bottom: var(--space-sm);
+        }
+
+        .product-price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            margin-top: var(--space-sm);
+        }
+
+        .product-price .currency {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-text-secondary);
+        }
+
+        .product-price .amount {
+            font-family: var(--font-heading);
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--color-text);
+        }
+
+        .product-price .unit {
+            font-size: 0.78rem;
+            color: var(--color-text-muted);
+        }
+
+        .product-action {
+            position: absolute;
+            bottom: var(--space-lg);
+            right: var(--space-lg);
+            width: 36px;
+            height: 36px;
+            background: var(--color-primary-subtle);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-primary);
+            font-size: 1.1rem;
+            transition: all var(--duration-fast) var(--ease-out);
+        }
+
+        .product-card:hover .product-action {
+            background: var(--color-primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(45, 176, 82, 0.3);
+        }
+
+        /* ============================================
+           SERVICES SECTION
+           ============================================ */
+        .services {
+            padding: var(--space-4xl) 0;
+            background: var(--color-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+        }
+
+        .service-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            position: relative;
+            overflow: hidden;
+            transition: all var(--duration-normal) var(--ease-out);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .service-card.featured {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            border-color: transparent;
+            color: white;
+        }
+
+        .service-card.featured .service-title,
+        .service-card.featured .service-desc {
+            color: white;
+        }
+
+        .service-card.featured .service-highlight {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .service-icon-wrap {
+            width: 56px;
+            height: 56px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.6rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .service-card:not(.featured) .service-icon-wrap {
+            background: var(--color-primary-subtle);
+        }
+
+        .service-card.featured .service-icon-wrap {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .service-title {
+            font-family: var(--font-heading);
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: var(--space-sm);
+        }
+
+        .service-desc {
+            font-size: 0.9rem;
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+            margin-bottom: var(--space-md);
+        }
+
+        .service-highlight {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            background: var(--color-primary-subtle);
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+        }
+
+        .service-highlight .highlight-icon {
+            font-size: 1rem;
+        }
+
+        /* ============================================
+           WHY CHOOSE US
+           ============================================ */
+        .why-us {
+            padding: var(--space-4xl) 0;
+            background: linear-gradient(170deg, var(--color-primary-subtle) 0%, var(--color-bg) 100%);
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: var(--space-lg);
+        }
+
+        .why-card {
+            text-align: center;
+            padding: var(--space-2xl) var(--space-lg);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            transition: all var(--duration-normal) var(--ease-out);
+        }
+
+        .why-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-card-hover);
+        }
+
+        .why-icon {
+            width: 72px;
+            height: 72px;
+            margin: 0 auto var(--space-lg);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            background: var(--color-primary-subtle);
+            transition: all var(--duration-normal) var(--ease-spring);
+        }
+
+        .why-card:hover .why-icon {
+            transform: scale(1.1);
+            box-shadow: 0 0 0 8px var(--color-primary-glow);
+        }
+
+        .why-title {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 6px;
+        }
+
+        .why-desc {
+            font-size: 0.82rem;
+            color: var(--color-text-muted);
+            line-height: 1.5;
+        }
+
+        /* ============================================
+           LOCATION SECTION
+           ============================================ */
+        .location {
+            padding: var(--space-4xl) 0;
+            background: var(--color-bg);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: start;
+        }
+
+        .map-container {
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--color-border-light);
+            aspect-ratio: 4/3;
+            background: var(--color-bg-alt);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .location-info {
+            padding: var(--space-lg) 0;
+        }
+
+        .location-detail {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-xl);
+            padding: var(--space-lg);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            transition: all var(--duration-fast) var(--ease-out);
+        }
+
+        .location-detail:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary-subtle);
+        }
+
+        .location-detail-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            background: var(--color-primary-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .location-detail-text h4 {
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-text);
+            margin-bottom: 4px;
+        }
+
+        .location-detail-text p {
+            font-size: 0.88rem;
+            color: var(--color-text-secondary);
+            line-height: 1.5;
+        }
+
+        .location-detail-text .open-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-top: 4px;
+        }
+
+        .location-detail-text .open-badge .dot {
+            width: 6px;
+            height: 6px;
+            background: var(--color-success);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        .location-btn {
+            margin-top: var(--space-md);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--color-text);
+            color: var(--color-text-inverse);
+            padding: var(--space-3xl) 0 var(--space-xl);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+        }
+
+        .footer-brand {
+            max-width: 360px;
+        }
+
+        .footer-brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: var(--space-sm);
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .footer-brand-desc {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.7;
+        }
+
+        .footer-links-group h4 {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: var(--space-md);
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .footer-links-group ul {
+            list-style: none;
+        }
+
+        .footer-links-group li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .footer-links-group a {
+            font-size: 0.88rem;
+            color: rgba(255, 255, 255, 0.7);
+            transition: color var(--duration-fast) var(--ease-out);
+        }
+
+        .footer-links-group a:hover {
+            color: var(--color-primary-light);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--space-xl);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        .footer-social {
+            display: flex;
+            gap: var(--space-md);
+        }
+
+        .footer-social a {
+            width: 36px;
+            height: 36px;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255, 255, 255, 0.6);
+            transition: all var(--duration-fast) var(--ease-out);
+            font-size: 0.9rem;
+        }
+
+        .footer-social a:hover {
+            background: var(--color-primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        /* ============================================
+           WHATSAPP FLOATING BUTTON
+           ============================================ */
+        .whatsapp-fab {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+            transition: all var(--duration-normal) var(--ease-out);
+            cursor: pointer;
+            animation: fabEntrance 0.5s var(--ease-spring) 1s both;
+        }
+
+        @keyframes fabEntrance {
+            from { opacity: 0; transform: scale(0) rotate(-180deg); }
+            to { opacity: 1; transform: scale(1) rotate(0); }
+        }
+
+        .whatsapp-fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 32px rgba(37, 211, 102, 0.5);
+        }
+
+        .whatsapp-fab svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        .whatsapp-fab .fab-tooltip {
+            position: absolute;
+            right: 72px;
+            background: var(--color-text);
+            color: white;
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(10px);
+            transition: all var(--duration-fast) var(--ease-out);
+            pointer-events: none;
+        }
+
+        .whatsapp-fab:hover .fab-tooltip {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .whatsapp-fab .fab-tooltip::after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 5px solid transparent;
+            border-left-color: var(--color-text);
+        }
+
+        /* Pulse ring */
+        .whatsapp-fab::before {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: var(--radius-full);
+            background: #25D366;
+            opacity: 0;
+            animation: fab-pulse 2s infinite;
+        }
+
+        @keyframes fab-pulse {
+            0% { transform: scale(1); opacity: 0.4; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        /* ============================================
+           SCROLL-TOP BUTTON
+           ============================================ */
+        .scroll-top {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 998;
+            width: 44px;
+            height: 44px;
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-secondary);
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-md);
+            cursor: pointer;
+            transition: all var(--duration-normal) var(--ease-out);
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+
+        .scroll-top:hover {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+            transform: translateY(-3px);
+        }
+
+        /* ============================================
+           RESPONSIVE — Mobile First Adjustments
+           ============================================ */
+        @media (max-width: 1024px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                gap: var(--space-2xl);
+            }
+
+            .hero-visual {
+                order: -1;
+            }
+
+            .hero-content {
+                text-align: center;
+                max-width: 100%;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-us-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding-top: 110px;
+                padding-bottom: var(--space-3xl);
+            }
+
+            .hero-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: var(--space-sm);
+            }
+
+            .hero-item {
+                padding: var(--space-md);
+            }
+
+            .hero-item-icon {
+                font-size: 1.8rem;
+            }
+
+            .hero-stat {
+                margin: 0;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: var(--space-md);
+            }
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: var(--space-md);
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            .hero-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-grid .hero-item:nth-child(5),
+            .hero-grid .hero-item:nth-child(6) {
+                display: none;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-md);
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-sm);
+            }
+
+            .product-image {
+                height: 140px;
+                font-size: 3rem;
+            }
+
+            .product-info {
+                padding: var(--space-md);
+            }
+
+            .why-us-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-md);
+            }
+
+            .why-card {
+                padding: var(--space-lg) var(--space-md);
+            }
+
+            .btn {
+                padding: 12px 22px;
+                font-size: 0.88rem;
+            }
+
+            .hero-stats {
+                gap: var(--space-lg);
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .container {
+                padding: 0 var(--space-md);
+            }
+        }
+
+        /* ============================================
+           MOBILE MENU
+           ============================================ */
+        .mobile-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 999;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xl);
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--duration-normal) var(--ease-out);
+        }
+
+        .mobile-nav.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-nav a {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--color-text);
+            transition: color var(--duration-fast) var(--ease-out);
+        }
+
+        .mobile-nav a:hover {
+            color: var(--color-primary);
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            font-size: 1.8rem;
+            background: none;
+            color: var(--color-text);
+        }
+
+        /* ============================================
+           LOADING ANIMATION
+           ============================================ */
+        .page-loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: var(--color-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.4s var(--ease-out), visibility 0.4s;
+        }
+
+        .page-loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-content {
+            text-align: center;
+        }
+
+        .loader-spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid var(--color-border);
+            border-top-color: var(--color-primary);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto var(--space-md);
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loader-text {
+            font-family: var(--font-heading);
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-text-muted);
+        }
+
+        /* ============================================
+           COUNTER ANIMATION HELPER
+           ============================================ */
+        .count-up {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader" role="status" aria-label="Loading">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">Loading fresh deals...</p>
+        </div>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container navbar-inner">
+            <a href="#" class="navbar-brand" aria-label="Mohan Lal Siyot Grocery Store Home">
+                <div class="brand-icon">🛒</div>
+                <div class="brand-text">
+                    <span class="brand-name">Mohan Lal Siyot</span>
+                    <span class="brand-tagline">Grocery Store</span>
+                </div>
+            </a>
+
+            <ul class="navbar-links">
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-us">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="https://share.google/m9TqD2EXDsORmXe1S" class="navbar-cta" target="_blank" rel="noopener">📍 Get Directions</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">✕</button>
+        <a href="#categories" class="mobile-nav-link">Categories</a>
+        <a href="#products" class="mobile-nav-link">Products</a>
+        <a href="#services" class="mobile-nav-link">Services</a>
+        <a href="#why-us" class="mobile-nav-link">About</a>
+        <a href="#location" class="mobile-nav-link">Location</a>
+        <a href="https://share.google/m9TqD2EXDsORmXe1S" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 16px;">📍 Get Directions</a>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero" aria-label="Welcome to Mohan Lal Siyot Grocery Store">
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Open Today — 8 AM to 10 PM
+                </div>
+
+                <h1 class="hero-title">
+                    Your Trusted <span class="highlight">Local Grocery</span> Store
+                </h1>
+
+                <p class="hero-description">
+                    Fresh items, affordable prices, and everyday essentials — all under one roof. Serving your neighbourhood with quality groceries and the best Atta Chakki service.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="https://share.google/m9TqD2EXDsORmXe1S" class="btn btn-primary" target="_blank" rel="noopener" id="hero-cta-directions">
+                        📍 Get Directions
+                    </a>
+                    <a href="#products" class="btn btn-secondary" id="hero-cta-explore">
+                        🛍️ Explore Products
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-value"><span class="count-up" data-target="500">0</span>+</div>
+                        <div class="hero-stat-label">Products</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value"><span class="count-up" data-target="1000">0</span>+</div>
+                        <div class="hero-stat-label">Happy Customers</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-value"><span class="count-up" data-target="10">0</span>+</div>
+                        <div class="hero-stat-label">Years Trusted</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-illustration">
+                    <!-- Floating badges -->
+                    <div class="floating-badge top-right">
+                        ✨ Fresh Daily
+                    </div>
+                    <div class="floating-badge bottom-left">
+                        🔥 Best Prices
+                    </div>
+
+                    <div class="hero-grid">
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🌾</span>
+                            <span class="hero-item-label">Grains</span>
+                        </div>
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🫒</span>
+                            <span class="hero-item-label">Oils</span>
+                        </div>
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🍪</span>
+                            <span class="hero-item-label">Snacks</span>
+                        </div>
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🥤</span>
+                            <span class="hero-item-label">Drinks</span>
+                        </div>
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🧹</span>
+                            <span class="hero-item-label">Home</span>
+                        </div>
+                        <div class="hero-item">
+                            <span class="hero-item-icon">🌶️</span>
+                            <span class="hero-item-label">Spices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CATEGORIES ===================== -->
+    <section class="categories" id="categories" aria-label="Product Categories">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">🏷️ Shop by Category</span>
+                <h2 class="section-title">Featured Categories</h2>
+                <p class="section-subtitle">Browse our carefully curated collection of everyday essentials at unbeatable prices</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card reveal reveal-delay-1" id="cat-grains">
+                    <div class="category-icon grains">🌾</div>
+                    <h3 class="category-name">Atta, Rice & Grains</h3>
+                    <p class="category-count">50+ Products</p>
+                </div>
+                <div class="category-card reveal reveal-delay-2" id="cat-oil">
+                    <div class="category-icon oil">🫒</div>
+                    <h3 class="category-name">Oil & Spices</h3>
+                    <p class="category-count">40+ Products</p>
+                </div>
+                <div class="category-card reveal reveal-delay-3" id="cat-snacks">
+                    <div class="category-icon snacks">🍿</div>
+                    <h3 class="category-name">Snacks & Beverages</h3>
+                    <p class="category-count">80+ Products</p>
+                </div>
+                <div class="category-card reveal reveal-delay-4" id="cat-household">
+                    <div class="category-icon household">🧹</div>
+                    <h3 class="category-name">Household Items</h3>
+                    <p class="category-count">60+ Products</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRODUCTS ===================== -->
+    <section class="products" id="products" aria-label="Our Products">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">🛒 Our Products</span>
+                <h2 class="section-title">Everyday Essentials</h2>
+                <p class="section-subtitle">Quality products at prices that make your wallet happy. Visit the store for the freshest picks!</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1: Atta -->
+                <div class="product-card reveal reveal-delay-1" id="product-atta">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFF8E1, #FFECB3);">
+                        <span class="product-badge">Best Seller</span>
+                        <span>🌾</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Wheat Atta</h3>
+                        <span class="product-tag">✔ Available in Store</span>
+                        <div class="product-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">280</span>
+                            <span class="unit">/ 10 kg</span>
+                        </div>
+                    </div>
+                    <div class="product-action" aria-label="View product">→</div>
+                </div>
+
+                <!-- Product 2: Rice -->
+                <div class="product-card reveal reveal-delay-2" id="product-rice">
+                    <div class="product-image" style="background: linear-gradient(135deg, #F1F8E9, #DCEDC8);">
+                        <span>🍚</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Basmati Rice</h3>
+                        <span class="product-tag">✔ Available in Store</span>
+                        <div class="product-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">120</span>
+                            <span class="unit">/ kg</span>
+                        </div>
+                    </div>
+                    <div class="product-action" aria-label="View product">→</div>
+                </div>
+
+                <!-- Product 3: Cooking Oil -->
+                <div class="product-card reveal reveal-delay-3" id="product-oil">
+                    <div class="product-image" style="background: linear-gradient(135deg, #FFF3E0, #FFE0B2);">
+                        <span class="product-badge">Popular</span>
+                        <span>🫒</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cooking Oil</h3>
+                        <span class="product-tag">✔ Available in Store</span>
+                        <div class="product-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">160</span>
+                            <span class="unit">/ litre</span>
+                        </div>
+                    </div>
+                    <div class="product-action" aria-label="View product">→</div>
+                </div>
+
+                <!-- Product 4: Biscuits -->
+                <div class="product-card reveal reveal-delay-4" id="product-biscuits">
+                    <div class="product-image" style="background: linear-gradient(135deg, #EFEBE9, #D7CCC8);">
+                        <span>🍪</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Biscuits</h3>
+                        <span class="product-tag">✔ Available in Store</span>
+                        <div class="product-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">30</span>
+                            <span class="unit">/ pack</span>
+                        </div>
+                    </div>
+                    <div class="product-action" aria-label="View product">→</div>
+                </div>
+
+                <!-- Product 5: Cold Drinks -->
+                <div class="product-card reveal reveal-delay-5" id="product-drinks">
+                    <div class="product-image" style="background: linear-gradient(135deg, #E3F2FD, #BBDEFB);">
+                        <span class="product-badge">Fresh</span>
+                        <span>🥤</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cold Drinks</h3>
+                        <span class="product-tag">✔ Available in Store</span>
+                        <div class="product-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">40</span>
+                            <span class="unit">/ bottle</span>
+                        </div>
+                    </div>
+                    <div class="product-action" aria-label="View product">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="services" id="services" aria-label="Our Services">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">⚙️ Our Services</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-subtitle">Beyond just groceries — we provide quality services that save you time and money</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Featured: Atta Chakki -->
+                <div class="service-card featured reveal reveal-delay-1" id="service-chakki">
+                    <div class="service-icon-wrap">⚙️</div>
+                    <h3 class="service-title">Atta Chakki Service</h3>
+                    <p class="service-desc">Get the freshest atta ground right in front of you. Pure, hygienic, and at the most affordable rate in town.</p>
+                    <span class="service-highlight">
+                        <span class="highlight-icon">🔥</span>
+                        Only ₹4 / kg
+                    </span>
+                </div>
+
+                <!-- Bulk Grocery -->
+                <div class="service-card reveal reveal-delay-2" id="service-bulk">
+                    <div class="service-icon-wrap">📦</div>
+                    <h3 class="service-title">Bulk Grocery</h3>
+                    <p class="service-desc">Stock up for the whole month! Special pricing on bulk orders for rice, atta, oil, and more household essentials.</p>
+                    <span class="service-highlight">
+                        <span class="highlight-icon">💰</span>
+                        Save More
+                    </span>
+                </div>
+
+                <!-- Fast Service -->
+                <div class="service-card reveal reveal-delay-3" id="service-fast">
+                    <div class="service-icon-wrap">⚡</div>
+                    <h3 class="service-title">Fast & Friendly Service</h3>
+                    <p class="service-desc">No long queues, no waiting. Walk in, pick what you need, and checkout in minutes. Our staff is always ready to help.</p>
+                    <span class="service-highlight">
+                        <span class="highlight-icon">🎯</span>
+                        Quick Checkout
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="why-us" id="why-us" aria-label="Why Choose Us">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">💚 Why Choose Us</span>
+                <h2 class="section-title">What Makes Us Different</h2>
+                <p class="section-subtitle">Trusted by hundreds of families in the neighbourhood for quality and value</p>
+            </div>
+
+            <div class="why-us-grid">
+                <div class="why-card reveal reveal-delay-1" id="why-affordable">
+                    <div class="why-icon">💰</div>
+                    <h3 class="why-title">Affordable Prices</h3>
+                    <p class="why-desc">Best rates on all groceries, guaranteed to save you money every visit</p>
+                </div>
+                <div class="why-card reveal reveal-delay-2" id="why-fresh">
+                    <div class="why-icon">🌿</div>
+                    <h3 class="why-title">Fresh Stock</h3>
+                    <p class="why-desc">Daily restocking ensures you always get the freshest products</p>
+                </div>
+                <div class="why-card reveal reveal-delay-3" id="why-trusted">
+                    <div class="why-icon">🤝</div>
+                    <h3 class="why-title">Trusted Shop</h3>
+                    <p class="why-desc">10+ years of serving the community with honesty and reliability</p>
+                </div>
+                <div class="why-card reveal reveal-delay-4" id="why-quick">
+                    <div class="why-icon">⚡</div>
+                    <h3 class="why-title">Quick Service</h3>
+                    <p class="why-desc">Fast billing, helpful staff, and a hassle-free shopping experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== LOCATION ===================== -->
+    <section class="location" id="location" aria-label="Our Location">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">📍 Find Us</span>
+                <h2 class="section-title">Visit Our Store</h2>
+                <p class="section-subtitle">We're conveniently located in your neighbourhood. Drop by anytime!</p>
+            </div>
+
+            <div class="location-grid">
+                <div class="map-container reveal">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.5!2d75.8!3d26.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzAwLjAiTiA3NcKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Mohan Lal Siyot Grocery Store Location"
+                    ></iframe>
+                </div>
+
+                <div class="location-info reveal reveal-delay-1">
+                    <div class="location-detail">
+                        <div class="location-detail-icon">🕐</div>
+                        <div class="location-detail-text">
+                            <h4>Business Hours</h4>
+                            <p>Monday – Sunday<br>8:00 AM – 10:00 PM</p>
+                            <span class="open-badge">
+                                <span class="dot"></span>
+                                Open Now
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <div class="location-detail-icon">📍</div>
+                        <div class="location-detail-text">
+                            <h4>Store Location</h4>
+                            <p>Local Market Area<br>Visit for the freshest groceries!</p>
+                        </div>
+                    </div>
+
+                    <div class="location-detail">
+                        <div class="location-detail-icon">📞</div>
+                        <div class="location-detail-text">
+                            <h4>Get in Touch</h4>
+                            <p>Walk in or find us on the map.<br>We're always happy to help!</p>
+                        </div>
+                    </div>
+
+                    <a href="https://share.google/m9TqD2EXDsORmXe1S" class="btn btn-primary location-btn" target="_blank" rel="noopener" id="location-directions-btn">
+                        📍 Get Directions on Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-brand-name">
+                        🛒 Mohan Lal Siyot Grocery Store
+                    </div>
+                    <p class="footer-brand-desc">
+                        Your trusted neighbourhood grocery shop. Serving fresh groceries, household essentials, and the best Atta Chakki service at affordable prices since over a decade.
+                    </p>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#location">Location</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#service-chakki">Atta Chakki</a></li>
+                        <li><a href="#service-bulk">Bulk Orders</a></li>
+                        <li><a href="#service-fast">Quick Checkout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Mohan Lal Siyot Grocery Store. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="WhatsApp">💬</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="Facebook">👤</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================== FLOATING WHATSAPP ===================== -->
+    <div class="whatsapp-fab" id="whatsappFab" role="button" tabindex="0" aria-label="Chat on WhatsApp">
+        <span class="fab-tooltip">Chat with us!</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </div>
+
+    <!-- Scroll-Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+    <script>
+        /* ============================================
+           Agent 2: Animation & Interaction Engine
+           ============================================ */
+
+        // Page Loader
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('pageLoader').classList.add('hidden');
+            }, 600);
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = 0;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            navbar.classList.toggle('scrolled', scrollY > 50);
+            lastScrollY = scrollY;
+        }, { passive: true });
+
+        // Mobile menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        const mobileNavClose = document.getElementById('mobileNavClose');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileNav.classList.add('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        });
+
+        function closeMobileNav() {
+            mobileNav.classList.remove('active');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        mobileNavClose.addEventListener('click', closeMobileNav);
+        mobileNavLinks.forEach(link => link.addEventListener('click', closeMobileNav));
+
+        // Scroll reveal (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Count-up animation
+        const countUpElements = document.querySelectorAll('.count-up');
+        const countObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    const target = parseInt(el.getAttribute('data-target'));
+                    const duration = 2000;
+                    const frameRate = 16;
+                    const totalFrames = Math.round(duration / frameRate);
+                    let frame = 0;
+
+                    const counter = setInterval(() => {
+                        frame++;
+                        // Ease-out cubic
+                        const progress = 1 - Math.pow(1 - (frame / totalFrames), 3);
+                        const current = Math.round(target * progress);
+                        el.textContent = current.toLocaleString('en-IN');
+
+                        if (frame >= totalFrames) {
+                            el.textContent = target.toLocaleString('en-IN');
+                            clearInterval(counter);
+                        }
+                    }, frameRate);
+
+                    countObserver.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        countUpElements.forEach(el => countObserver.observe(el));
+
+        // Scroll-Top button
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.addEventListener('scroll', () => {
+            scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Dynamic "Open Now" check
+        function checkIfOpen() {
+            const now = new Date();
+            const hours = now.getHours();
+            const isOpen = hours >= 8 && hours < 22;
+            const badges = document.querySelectorAll('.open-badge');
+            const heroBadge = document.querySelector('.hero-badge');
+
+            badges.forEach(badge => {
+                if (!isOpen) {
+                    badge.innerHTML = '<span class="dot" style="background:#FF5252;animation:none;"></span> Closed Now';
+                    badge.style.color = '#FF5252';
+                }
+            });
+
+            if (heroBadge && !isOpen) {
+                heroBadge.innerHTML = '<span class="dot" style="background:#FF5252;animation:none;"></span> Opens at 8:00 AM';
+            }
+        }
+        checkIfOpen();
+
+        // Keyboard accessibility for WhatsApp FAB
+        document.getElementById('whatsappFab').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                // WhatsApp action placeholder
+                alert('WhatsApp chat coming soon!');
+            }
+        });
+
+        /* ============================================
+           Agent 4: Performance Optimization
+           ============================================ */
+
+        // Lazy load map iframe
+        const mapContainer = document.querySelector('.map-container');
+        if (mapContainer) {
+            const mapObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const iframe = mapContainer.querySelector('iframe');
+                        if (iframe && !iframe.getAttribute('data-loaded')) {
+                            iframe.setAttribute('data-loaded', 'true');
+                        }
+                        mapObserver.unobserve(mapContainer);
+                    }
+                });
+            }, { rootMargin: '200px' });
+
+            mapObserver.observe(mapContainer);
+        }
+
+        // Prefers reduced motion
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            document.querySelectorAll('.reveal').forEach(el => {
+                el.style.transition = 'none';
+                el.classList.add('visible');
+            });
+        }
+
+        console.log('%c🛒 Mohan Lal Siyot Grocery Store', 'font-size: 20px; font-weight: bold; color: #2DB052;');
+        console.log('%cFresh Groceries at Affordable Prices', 'font-size: 14px; color: #5A6B61;');
+    </script>
+
+</body>
+</html>
